@@ -1,7 +1,31 @@
+* {box-sizing: border-box;}
+
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
 .banner{
-	background-color: orange;
+	background: linear-gradient(#FAA20E, #E7833B);
 	height: 440px;
-	position: relative;
-	width: 100vw;
-	height: 100vh;
+	/*position: relative;*/
+	width: 100%;
+}
+
+.banner-h1{
+	text-align: center;
+	font-size: 72px;
+	color: white;
+}
+
+.banner-h2{
+	text-align: center;
+	font-size: 43px;
+	color: white;
+}
+
+.logo {
+	width: 130px;
+	padding-top: 41px;
+	padding-left: 24px;
 }
