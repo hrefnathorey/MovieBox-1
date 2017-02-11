@@ -28,4 +28,8 @@ body {
 	width: 130px;
 	padding-top: 41px;
 	padding-left: 24px;
+	-webkit-filter: drop-shadow(3px 3px 3px #777);
+  	filter: drop-shadow(3px 3px 3px #777);
+
+
 }
