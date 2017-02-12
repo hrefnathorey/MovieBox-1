@@ -227,3 +227,32 @@ p.under-movie-head-info{
 	font-weight: 300;
 	font-size: 20px;
 	display: inline;
+}
+h1.movie-info{
+	font-family: 'oswald', sans-serif;
+	margin:  75px 0 52px 0;
+}
+.stills-img img{
+	width: 100%;
+	max-width: 221px;
+}
+p.plot{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+}
+h1.info-stills-storyline{
+	font-family: 'oswald', sans-serif;
+	margin-top: -40px;
+}
+.cast-images img{
+	width: 100%;
+}
+.movie-cast{
+	justify-content: space-between;
+    display: flex;
+}
+figcaption {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	margin: 28px 0 50px 0;
+}
