@@ -6,68 +6,78 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-
 </head>
 <body>
 
-
-	<!-- <div id="header"></div> -->
-
+	<!-- Loada header með ajax -->
+	<div id="header"></div>
+	
 	<div class="container banner">
+		
 		<div class="row">
-			<div class="col-lg-2">
-				<img class="logo" src="img/Moviebox logo.png">
-			</div>	
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-12 col-lg-12">
 				<h1 class="banner-h1">Welcome to Movie Box</h1>
 				<h2 class="banner-h2">Your favourite movie source</h2>
 			</div>
-			
 		</div>
 	</div>
-	<div id="test">
-		
-	</div>
-	<footer>
-		<div class="container footer">
-			<div class="container footer-logo">
-				<div class="row">
-					<div class="col-lg-2">
-						<img class="logo-f" src="img/Moviebox logo.png">
-					</div>	
-				</div>
-			</div>
-			<div class="footer-nav">
-				<div class="row">
-					<div class="col-lg-12 footer-menu">
-						<ul>
-							<li><a  class="font-color">About</a></li>
-							<li><a  class="font-color">Terms of use</a></li>
-							<li><a  class="font-color">FAQ</a></li>
-							<li><a  class="font-color">Privacy</a></li>
-							<li><a  class="font-color">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 copyright">
-					<p>Copyright © 2016-2017 - MovieBox.io, inc.</p>
-				</div>
-			</div>
+	<div class="container">
+		<div class="row">
+			<h1 class="fyrirsögn">Popular</h1>
 		</div>
-	</footer>
+		<div class="row">
+			<div class="popular-slider movie-slider">
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+				<div><img class="img-responsive" src="http://kenwheeler.github.io/slick/img/fonz1.png"/></div>
+			</div>
+		</div>		
+	</div>
+	<div class="container">
+		<div class="row">
+			<h1 class="fyrirsögn">Recently Added</h1>
+		</div>
+		<div class="row">
+			<div class="recent-slider">
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+			</div>
+		</div>		
+	</div>
+	<div class="container">
+		<div class="row">
+			<h1 class="fyrirsögn">Comedy</h1>
+		</div>
+		<div class="row">
+			<div class="comedy-slider">
+				<div>your content</div>
+				<div>your content</div>
+				<div>your content</div>
+			</div>		
+		</div>		
+	</div>
+	<div class="container">
+		<div class="row">
+			<button>See More</button>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+	<script type="text/javascript" src="vendor/slick/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,3 +1,10 @@
+
+// Loada inn header og footer með Ajax
+$('#header').load('./header.html');
+$('#footer').load('./footer.html');
+
+
+
 var r = new XMLHttpRequest(); //hluti af javascript
 r.open("GET", 'https://api.themoviedb.org/3/movie/550?api_key=b121c7cc62271f6902d3cd115457a166', true);
 r.onreadystatechange = function () {
@@ -14,3 +21,14 @@ r.onreadystatechange = function () {
 	document.getElementById("test").append(container);
 };
 r.send("banana=yellow");
+
+ // Slider á forsíðu
+ 
+$('.popular-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: false,
+  centerMode: false,
+  infinite:false
+});
+

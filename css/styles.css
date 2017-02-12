@@ -3,37 +3,93 @@
 
 body {
 	font-family: 'Oswald-Light', sans-serif;
+	position: relative;
 }
-.banner{
+
+header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100% !important;
+}
+
+header .row {
+	margin-top: 41px;
+}
+
+header .row .col-lg-2:nth-child(2) {
+	text-align: center;
+	margin-top: 28px;
+}
+
+.banner {
 	background: linear-gradient(#FAA20E, #E7833B);
 	height: 440px;
 	width: 100%;
 }
-.banner-h1{
+
+.banner .row {
+	margin-top: 160px;
+}
+
+.banner-h1 {
 	text-align: center;
 	font-size: 72px;
 	color: white;
 }
-.banner-h2{
+
+.banner-h2 {
 	text-align: center;
 	font-size: 43px;
 	color: white;
 }
+
 .logo {
 	width: 100%;
 	max-width: 130px;
-	padding-top: 41px;
-	padding-left: 24px;
+	margin-left: 24px;
+	-webkit-filter: drop-shadow(3px 3px 3px #999);
+  	filter: drop-shadow(3px 3px 3px #999);
 }
-.search-div{
+
+.search {
+	width: 50px;
+	-webkit-filter: drop-shadow(3px 3px 3px #999);
+  	filter: drop-shadow(3px 3px 3px #999);
+  	color: white;
+  	font-size: 46px;
+}
+
+.search-div {
 	float: right;
+	
 	margin-top: 52px;
 }
-.search-icon{
+.search-icon {
 	width: 100%;
 	max-width: 50px;
 }
-footer{
+
+/*Slider á forsíðu*/
+
+.slick-slide {
+	height: inherit;
+	margin-right: 20px;
+	border: 1px solid white;
+	-webkit-filter: drop-shadow(2px 2px 2px #ddd);
+  	filter: drop-shadow(2px 2px 2px #ddd);
+}
+
+.slick-track {
+	padding-bottom: 10px;
+}
+/*Slider á forsíðu
+.movie-slider .slick-slide img{
+	height: 345px;
+	width: 406px;
+}*/
+
+footer {
 	height: 305px;
 	background-color: orange;
     left: 0;
@@ -41,26 +97,31 @@ footer{
     width: 100%;
     background: linear-gradient(#FAA20E, #E7833B);
 }
-.footer-nav{
+
+.footer-nav {
 	display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-menu ul li{
+
+.footer-menu ul li {
 	display: inline-block;
 	font-family: "oswald" ;
 	font-size: 20px;
 	font-weight: 300;
 	padding: 0 30px;
 }
-.footer-menu ul{
+
+.footer-menu ul {
 	width: 100%;
 	text-align: center;
 }
-footer .font-color{
+
+footer .font-color {
 	color: #fff;
 }
-.logo-f{
+
+.logo-f {
 	width: 130px;
 	margin: 55px 0;
 }
@@ -196,6 +257,7 @@ figcaption {
 	text-align: center;
 	margin: 28px 0 50px 0;
 }
+<<<<<<< HEAD
 
 
 
@@ -205,3 +267,5 @@ figcaption {
 
 
 }
+=======
+>>>>>>> e3b096c414a8b3f594c65b3a748d7b7b09736b1c
