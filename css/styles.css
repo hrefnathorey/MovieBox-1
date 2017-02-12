@@ -1,35 +1,229 @@
+
 * {box-sizing: border-box;}
 
-
 body {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald-Light', sans-serif;
+	position: relative;
 }
 
-.banner{
+header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100% !important;
+}
+
+header .row {
+	margin-top: 41px;
+}
+
+header .row .col-lg-2:nth-child(2) {
+	text-align: center;
+	margin-top: 28px;
+}
+
+.banner {
 	background: linear-gradient(#FAA20E, #E7833B);
 	height: 440px;
-	/*position: relative;*/
 	width: 100%;
 }
 
-.banner-h1{
+.banner .row {
+	margin-top: 160px;
+}
+
+.banner-h1 {
 	text-align: center;
 	font-size: 72px;
 	color: white;
 }
 
-.banner-h2{
+.banner-h2 {
 	text-align: center;
 	font-size: 43px;
 	color: white;
 }
 
 .logo {
-	width: 130px;
-	padding-top: 41px;
-	padding-left: 24px;
-	-webkit-filter: drop-shadow(3px 3px 3px #777);
-  	filter: drop-shadow(3px 3px 3px #777);
-
-
+	width: 100%;
+	max-width: 130px;
+	margin-left: 24px;
+	-webkit-filter: drop-shadow(3px 3px 3px #999);
+  	filter: drop-shadow(3px 3px 3px #999);
 }
+
+.search {
+	width: 50px;
+	-webkit-filter: drop-shadow(3px 3px 3px #999);
+  	filter: drop-shadow(3px 3px 3px #999);
+  	color: white;
+  	font-size: 46px;
+}
+
+.search-div {
+	float: right;
+	
+	margin-top: 52px;
+}
+.search-icon {
+	width: 100%;
+	max-width: 50px;
+}
+
+/*Slider á forsíðu*/
+
+.slick-slide {
+	height: inherit;
+	margin-right: 20px;
+	border: 1px solid white;
+	-webkit-filter: drop-shadow(2px 2px 2px #ddd);
+  	filter: drop-shadow(2px 2px 2px #ddd);
+}
+
+.slick-track {
+	padding-bottom: 10px;
+}
+/*Slider á forsíðu
+.movie-slider .slick-slide img{
+	height: 345px;
+	width: 406px;
+}*/
+
+footer {
+	height: 305px;
+	background-color: orange;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(#FAA20E, #E7833B);
+}
+
+.footer-nav {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu ul li {
+	display: inline-block;
+	font-family: "oswald" ;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 0 30px;
+}
+
+.footer-menu ul {
+	width: 100%;
+	text-align: center;
+}
+
+footer .font-color {
+	color: #fff;
+}
+
+.logo-f {
+	width: 130px;
+	margin: 55px 0;
+}
+.footer-logo{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+	float: right;
+	color: #fff;
+	font-family: "oswald" ;
+	font-weight: 300;
+	text-align: right;
+	padding: 10px 0; 
+}
+
+/************** ABOUT - PAGE ******************/
+/*--- MYNDA/VIDEO BANNER ---*/
+.about-header {
+  	position: relative;
+	background-image: url(../img/star.jpg);
+	min-height: 686px;
+	width: 100%;
+	background-size: cover;
+	background-color: #06aec0;
+	background-position: 50% 40%;
+	z-index: -1;	
+}
+
+/*---SKÁ LÍNA---*/
+.about-header:after {
+	content: '';
+  	position: absolute;
+  	width: 100%;
+	height: 250px;
+	top: 600px;
+	left: 0;
+ 	bottom: 0;
+	overflow: visible;
+  	background: #FAFAFA;
+	-webkit-transform: skewY(-5.5deg); 
+	-moz-transform: skewY(-5.5deg);
+	-ms-transform: skewY(-5.5deg);
+	-o-transform: skewY(-5.5deg);
+	transform: skewY(-5.5deg);
+  	-webkit-backface-visibility: hidden;
+	backface-visibility: initial;
+	
+}
+
+.movie-cover img{
+	width: 100%;
+	max-width: 388px;
+	margin-bottom: 48px;
+}
+h1.movie-headline{
+	font-family: 'oswald', sans-serif;
+	font-size: 40px;
+	display: inline;
+}
+h1.movie-headline-light{
+	font-family: 'oswald', sans-serif;
+	font-weight: 300;
+	display: inline;
+}
+h5.movie-year{
+	padding: 47px 0 37px 0;
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+p.movie-head{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	display: inline;
+}
+p.movie-head-light{
+	display: inline;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+.info-under-cover{
+	justify-content: space-between;
+}
+p.under-movie-head{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #828282;
+	display: inline;
+}
+p.under-movie-head-info{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #3D6390;
+	font-weight: 300;
+	font-size: 20px;
+	display: inline;
