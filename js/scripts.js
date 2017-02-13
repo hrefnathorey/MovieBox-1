@@ -23,12 +23,17 @@ r.onreadystatechange = function () {
 r.send("banana=yellow");
 
  // Slider á forsíðu
- 
-$('.popular-slider').slick({
+
+ const sliders = ['.popular-slider', '.comedy-slider', '.recent-slider']
+ // Fyrir hvern streng (klasi) setjum við slick slider.
+ sliders.forEach(slider => $(slider).slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
-  centerMode: false,
+  initialSlide: 1,
+  centerMode: true,
   infinite:false
-});
+}))
+
+;
 
