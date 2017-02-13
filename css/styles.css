@@ -180,6 +180,28 @@ footer .font-color {
 	
 }
 
+.trailer-header {
+	min-height: 1130px;
+}
+
+.trailer-header h1 {
+	font-size: 70px;
+}
+
+.slick-list {
+	width: 125%;
+	padding-left: 0px !important;
+}
+
+.trailer-header h1 span {
+	font-size: 70px;
+	font-weight: 100;
+}
+
+.slick-arrow {
+	display: none !important;
+}
+
 .movie-cover img{
 	width: 100%;
 	max-width: 388px;
