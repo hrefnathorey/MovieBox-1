@@ -18,32 +18,37 @@
 <body>
 
 	<!-- Loada header með ajax -->
-<div id="header"></div>
 
-	<div class="container about-header">
-		<div class="row">
-			<div class="trailer"></div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 movie-cover">
-				<img src="img/rougeone.jpeg">
-			</div>
-			<div class="col-lg-6 movie-details">
- 					<h1>Rogue One: <span>A Star Wars Story</span></h1>
- 					<h5 class="movie-year">2016</h5>
- 					<label>Director:</label> <span>Gareth Edwards</span>
- 					<label>Writers:</label> <span>Chris Weitz and Tony Gilroy</span>
- 				</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 info-under-cover">
-				<p class="under-movie-head">Duration:</p> <p class="under-movie-head-info">2h 13min</p><br><br>
-				<p class="under-movie-head">Genre:</p> <p class="under-movie-head-info">Action, Adventure, Sci-Fi</p>
+	<div id="header"></div>
+	
+	<div style="position: relative;" class="trailer-header">
+		<div class="container about-header">
+			<div class="row">
+				<div class="trailer"></div>
 			</div>
 		</div>
+
+		<div class="container" style="position: absolute;bottom: 0px;left: 0;right: 0;margin: auto">
+			<div class="row">
+				<div class="col-lg-4 movie-cover">
+					<img src="img/rougeone.jpeg">
+				</div>
+				<div class="col-lg-6 movie-details">
+					<h1>Rogue One: <span>A Star Wars Story</span></h1>
+					<h5 class="movie-year">2016</h5>
+					<label>Director:</label> <span>Gareth Edwards</span>
+					<label>Writers:</label> <span>Chris Weitz and Tony Gilroy</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 info-under-cover">
+					<p class="under-movie-head">Duration:</p> <p class="under-movie-head-info">2h 13min</p><br><br>
+					<p class="under-movie-head">Genre:</p> <p class="under-movie-head-info">Action, Adventure, Sci-Fi</p>
+				</div>
+			</div>
+		</div>
 	</div>
+	<!-- ...div-ið endar hér -->
 
 	<div class="container">
 		<div class="row">
@@ -118,8 +123,10 @@
 			</div>
 		</div>
 	</div>
+
 	
   	<div id="footer"></div>
+
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
