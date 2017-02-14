@@ -12,6 +12,7 @@ header {
 	top: 0px;
 	left: 0px;
 	width: 100% !important;
+	z-index: 1;
 }
 
 header .row {
@@ -87,7 +88,7 @@ header .row .col-lg-2:nth-child(2) {
 }
 
 .banner h1 {
-	text-align: center;
+
 	font-size: 72px;
 	color: white;
 }
@@ -407,8 +408,9 @@ h1.search-result-title{
 	color: #fff;
 	font-size: 62px;
 	font-family: 'oswald', sans-serif;
+	margin-top: 60px;
 	font-weight: 300;
-	margin: 138px 0 0 190px;
+
 }
 
 .search-conditions{
@@ -475,6 +477,44 @@ h1.search-result-title{
 .search-result-info p{
 	margin-top: 20px;
 }
+
+/*****************SEARCH***************/
+
+.close img{
+	width: 100%;
+	max-width: 36px;
+	z-index: 1;
+	margin-top: 70px;
+}
+.search-input{
+	width: 100%;
+	height: 40px;
+	border-bottom: solid #E7833B;
+	margin-bottom: 70px;
+
+}
+.search-input input, input:focus{
+	width: 90%;
+	-moz-appearance: none;
+	border-style: none;
+}
+.search-input input:focus{
+	background-color: blue;
+}
+.search-input label {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -637,7 +677,7 @@ p.movie-head-light{
 	display: none;
 }
 /*****************SEARCH RESULT-PAGE MOBILE***************/
-/*
+
 h1.search-result-title{
 	color: #fff;
 	font-size: 35px;
@@ -652,6 +692,74 @@ h1.search-result-title{
 	height: 200px;
 	width: 100%;
 }
+.search-conditions{
+	margin: 27px 0 27px 0;
+	font-family: 'oswald', sans-serif;
+	font-size: 26px;
+	justify-content: center;
+	display: flex;
+}
+.genre-search{
+	width: 95px;
+	height: 32px;
+	border: solid #E84B33;
+	border-radius: 20px;
+	background-color: #E84B33;
+}
+.genre-search p{
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+	font-weight: 400;
+	text-align: center;
+}
+.genre-search-results{
+	display: flex;
+	justify-content: space-around;
+}
+.line-between{
+	width: 340px;
+	height: 40px;
+	border-bottom: solid #E7833B;
+	margin-bottom: 70px;
+	width: 100%;
+}
+.search-result{
+	margin: 0;
+	background-color: #fff;
+}
+.search-result img{
+	width: 100%;
+	min-width: 68px;
 
-*/
+}
+.search-result-info h1{
+	font-size: 20px;
+}
+.search-result-info span{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #828282;
+	font-size: 14px;
+}
+.search-result-info p{
+	font-size: 14px;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+.search-result-info h5 {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #E7833B;
+	font-size: 16px;
+	font-weight: 700;
+	margin-left: 10px;
+	display: inline;
+}
+
+
 }

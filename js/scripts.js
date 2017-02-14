@@ -18,9 +18,13 @@ r.onreadystatechange = function () {
 	title.innerHTML = response.original_title;
 	//container.append(image);
 	container.append(title);
-	document.getElementById("test").append(container);
+	document.getElementById("img").append(container);
 };
 r.send("banana=yellow");
+
+
+
+
 
  // Slider á forsíðu
 
