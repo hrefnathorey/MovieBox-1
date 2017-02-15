@@ -12,6 +12,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
 
@@ -25,11 +28,23 @@
 		<div class="row">
 			<div class="col-lg-2 col-xs-8 search-input">
   				<label>Search</label>
-  				<input class="w3-input" type="text">
+  				<input class="w3-input search-type" type="text">
 			</div>
-			<div class="col-lg-2 col-xs-8 leit-icon">
+			<!-- <div class="col-lg-2 col-xs-8 leit-icon">
   				<img src="img/LEIT.png">
-			</div>
+			</div> -->
+<div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+    	<div data-role="rangeslider">
+        	<label for="rating-min">Rating:</label>
+        	<input class="search-slider"type="range" name="rating-min" id="rating-min" value="2" min="0" max="10">
+        	<label for="price-max">Price:</label>
+        	<input class="search-slider"type="range" name="rating-max" id="rating-max" value="8" min="0" max="10">
+    	</div>
+        <input type="submit" data-inline="true" value="Submit">
+      </form>
+  </div>
+
 		</div>
 	</div>
 	
