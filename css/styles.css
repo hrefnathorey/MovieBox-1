@@ -1,6 +1,5 @@
 
 * {box-sizing: border-box;}
-
 body {
 	font-family: 'Oswald', sans-serif;
 	position: relative;
@@ -339,8 +338,14 @@ h1.movie-headline{
 	display: inline;
 }
 
-.movie-details{
+.movie-details span{
+	font-size: 22px;
+	font-family: 'Roboto Condensed', sans-serif;
 	margin-bottom: 95px;
+}
+h1.movie-headline-light{
+	font-family: 'oswald', sans-serif;
+	font-weight: 300;
 }
 
 .movie-details span{
@@ -348,6 +353,7 @@ h1.movie-headline{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
 }
+
 .movie-details label{
 	font-size: 22px;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -536,6 +542,7 @@ h1.search-result-title{
 	font-size: 20px;
 
 }
+
 
 
 @media only screen and (max-width: 480px) {
@@ -774,5 +781,8 @@ h1.search-result-title{
 	font-weight: 700;
 	margin-left: 10px;
 	display: inline;
+}
+
+
 }
 

@@ -86,6 +86,7 @@ const getSlider = (path, sliderId, sliderClass) => {
 }
 
 
+
  // Slider á forsíðu
 
 
