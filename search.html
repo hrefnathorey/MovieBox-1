@@ -12,9 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
+
 </head>
 <body>
 
@@ -33,27 +32,41 @@
 			<!-- <div class="col-lg-2 col-xs-8 leit-icon">
   				<img src="img/LEIT.png">
 			</div> -->
-<div data-role="main" class="ui-content">
-    <form method="post" action="demoform.asp">
-    	<div data-role="rangeslider">
-        	<label for="rating-min">Rating:</label>
-        	<input class="search-slider"type="range" name="rating-min" id="rating-min" value="2" min="0" max="10">
-        	<label for="price-max">Price:</label>
-        	<input class="search-slider"type="range" name="rating-max" id="rating-max" value="8" min="0" max="10">
-    	</div>
-        <input type="submit" data-inline="true" value="Submit">
-      </form>
-  </div>
-
 		</div>
+		
+		<div id="slider" class="noUi-target noUi-ltr noUi-horizontal">
+			<div class="noUi-base">
+				<div class="noUi-origin" style="left: 20%;">
+					<div class="noUi-handle noUi-handle-lower" data-handle="0" style="z-index: 5;">
+					</div>
+				</div>
+				<div class="noUi-connect" style="left: 20%; right: 20%;">
+				</div>
+				<div class="noUi-origin" style="left: 80%;">
+					<div class="noUi-handle noUi-handle-upper" data-handle="1" style="z-index: 4;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
 	</div>
 	
-
 	<div id="footer"></div>
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="vendor/slick/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/nouislider.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
