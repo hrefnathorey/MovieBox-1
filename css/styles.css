@@ -5,7 +5,7 @@ body {
 	position: relative;
 }
 
-/*Header*/
+/*******Header******/
 
 header {
 	position: absolute;
@@ -75,7 +75,7 @@ header .row .col-lg-2:nth-child(2) {
 	max-width: 50px;
 }
 
-/*Appelsínugulur banner*/
+/*******Appelsínugulur banner*******/
 
 .banner {
 	background: linear-gradient(#FAA20E, #E7833B);
@@ -106,7 +106,7 @@ header .row .col-lg-2:nth-child(2) {
 	margin: auto;
 }
 
-/*Slider á forsíðu*/
+/*******Slider á forsíðu*******/
 
 .slick-slide {
 	height: inherit;
@@ -118,6 +118,15 @@ header .row .col-lg-2:nth-child(2) {
 
 .slick-track {
 	padding-bottom: 10px;
+}
+
+.slick-list {
+	width: 100%;
+	padding-left: 0px !important;
+}
+
+.slick-arrow {
+	display: none !important;
 }
 
 .slide-overlay {
@@ -164,18 +173,33 @@ header .row .col-lg-2:nth-child(2) {
     text-align: center;
 }
 
-/*Velur öll div í næsta leveli (næsta strik) innan clasans*/
-/*.movie-slider > div {
-	position: relative;
+.slide-container {
+	position: relative; 
+	height: 406px; 
+	max-width: 345px;
 }
-/*Velur núna öll div í þarnæsta leveli (þarnæsta strik) innan clasans*/
-/*.movie-slider > div > div {
-	position: absolute;
-	bottom: 0px; 
-	width: 100%;
-	height: 40%; 
-	background-color: rgba(100,100,100,0.5);
+
+.slider-heading {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	color: #4F4F4F;
 }
+
+ /*See more button*/
+
+.see-more {
+	background-color: #F2994A;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	width: 360px;
+	height: 100px;
+	font-size: 40px;
+	margin: 50px;
+	text-align: center;
+}
+
 
 /*Footer*/
 
@@ -227,6 +251,7 @@ footer .font-color {
     justify-content: center;
     align-items: center;
 }
+
 .copyright{
 	float: right;
 	color: #fff;
@@ -292,18 +317,10 @@ footer .font-color {
 	font-size: 50px;
 }
 
-.slick-list {
-	width: 125%;
-	padding-left: 0px !important;
-}
 
 .trailer-header h1 span {
 	font-size: 50px;
 	font-weight: 100;
-}
-
-.slick-arrow {
-	display: none !important;
 }
 
 .movie-cover img{
@@ -314,44 +331,53 @@ footer .font-color {
 	-webkit-filter: drop-shadow(2px 2px 2px #ddd);
      filter: drop-shadow(2px 2px 2px #ddd);
 }
+
 h1.movie-headline{
 	font-family: 'oswald', sans-serif;
 	font-size: 40px;
 	display: inline;
 }
-.movie-details{
+
+.movie-details span{
+	font-size: 22px;
+	font-family: 'Roboto Condensed', sans-serif;
 	margin-bottom: 95px;
 }
 h1.movie-headline-light{
 	font-family: 'oswald', sans-serif;
 	font-weight: 300;
-	display: inline;
 }
+
 .movie-details span{
 	font-size: 22px;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
 }
+
 .movie-details label{
 	font-size: 22px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
 h5.movie-year{
 	padding: 26px 0 26px 0;
 	font-size: 30px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
+
 p.movie-head{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 20px;
 	display: inline;
 }
+
 p.movie-head-light{
 	display: inline;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 }
+
 .info-under-cover{
 	font-size: 18px;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -359,6 +385,7 @@ p.movie-head-light{
 .info-under-cover span{
 	color: #3D6390;
 }
+
 p.under-movie-head{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
@@ -366,6 +393,7 @@ p.under-movie-head{
 	color: #828282;
 	display: inline;
 }
+
 p.under-movie-head-info{
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #3D6390;
@@ -373,29 +401,36 @@ p.under-movie-head-info{
 	font-size: 20px;
 	display: inline;
 }
+
 h1.movie-info{
 	font-family: 'oswald', sans-serif;
 	margin:  75px 0 32px 0;
 }
+
 .stills-img img{
 	width: 100%;
 	max-width: 221px;
 }
+
 p.plot{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 18px;
 }
+
 h1.info-stills-storyline{
 	font-family: 'oswald', sans-serif;
 	margin: -40px 0 32px 0;
 }
+
 .cast-images img{
 	width: 100%;
 }
+
 .movie-cast{
 	justify-content: space-between;
     display: flex;
 }
+
 figcaption {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
@@ -513,20 +548,7 @@ h1.search-result-title{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 480px) {
-
 
 
 /*****************ABOUT-PAGE MOBILE***************/
@@ -766,3 +788,4 @@ h1.search-result-title{
 
 
 }
+
