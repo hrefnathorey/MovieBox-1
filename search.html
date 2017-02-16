@@ -11,8 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 
 </head>
 <body>
@@ -33,34 +34,69 @@
   				<img src="img/LEIT.png">
 			</div> -->
 		</div>
-		
-		<div id="slider" class="noUi-target noUi-ltr noUi-horizontal">
-			<div class="noUi-base">
-				<div class="noUi-origin" style="left: 20%;">
-					<div class="noUi-handle noUi-handle-lower" data-handle="0" style="z-index: 5;">
-					</div>
-				</div>
-				<div class="noUi-connect" style="left: 20%; right: 20%;">
-				</div>
-				<div class="noUi-origin" style="left: 80%;">
-					<div class="noUi-handle noUi-handle-upper" data-handle="1" style="z-index: 4;">
-					</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 search-filter-title">
+				<h3>Rating</h3>
+			</div>
+		</div>
+		<div class="center-range-slide">
+			<div class="row">
+				<div class="col-lg-1 range-search-slide-value">
+					<div id="slider-value-0">0</div>
+					<div id="slider-value">x</div>
+					<div id="slider-value-10">10</div>
 				</div>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
+		<div class="center-range-slide">
+			<div id="slider"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 search-filter-title">
+				<h3>Year</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 search-filter-title">
+				<h3>Genre</h3>
+			</div>
+		</div>
+		<div class="row genre-button-line">
+			<div class="col-lg-4 genre-button">
+				<button class="">Action</button>
+			</div>
+			<div class="col-lg-4 genre-button">
+				<button class="">Action</button>
+			</div>
+			<div class="col-lg-4 genre-button">
+				<button class="">Action</button>
+			</div>
+		</div>
+		<div class="row genre-button-line">
+			<div class="col-lg-4 genre-button">
+				<button class="">Action</button>
+			</div>
+			<div class="col-lg-4 genre-button">
+				<button class="">Action</button>
+			</div>
+			<div class="col-lg-4 genre-button">
+				<button class="">Action</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-11 show-more-button">
+				<button class="show-more">Show more</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 submit-search-button">
+				<button class="submit-search">Search</button>
+			</div>
+		</div>
 	</div>
-	
+
 	<div id="footer"></div>
 
 	<script type="text/javascript" src="js/jquery.js"></script>

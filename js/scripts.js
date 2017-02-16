@@ -5,6 +5,16 @@ $('#footer').load('./footer.html');
 
 // Api gögn
 
+
+
+//genre-buttons
+
+$('button').on('click', function(){
+    $('button').removeClass('selected');
+    $(this).addClass('selected');
+});
+
+
 const createSlide = (slide) => {
 return `<div class="slide-container">
 			<img class="img-responsive" src="${getImage(slide.poster_path)}"/>
