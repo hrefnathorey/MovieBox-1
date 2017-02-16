@@ -1,9 +1,9 @@
 
-// Loada inn header og footer með Ajax
+// ****Loada inn header og footer með Ajax
 $('#header').load('./header.html');
 $('#footer').load('./footer.html');
 
-// Api gögn
+// ****Api gögn
 
 const createSlide = (slide) => {
 return `<div class="slide-container">
@@ -88,10 +88,7 @@ const getSlider = (path, sliderId, sliderClass) => {
 }
 
 
-
-
- // Slider á forsíðu
-
+ // *****Slider á forsíðu
 
 const createSlider = (slider) => {
 	// Fyrir hvern streng (klasi) setjum við slick slider.
@@ -128,13 +125,3 @@ sliders.forEach(slider => createSlider(slider));
 
 
 
-let slider = document.getElementById('slider');
-
-noUiSlider.create(slider, {
-	start: [20, 80],
-	connect: true,
-	range: {
-		'min': 0,
-		'max': 100
-	}
-});
