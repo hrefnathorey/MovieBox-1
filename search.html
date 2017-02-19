@@ -13,12 +13,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	
 
 </head>
 <body>
-
-
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2 col-lg-offset-8 close">
@@ -30,53 +27,115 @@
 				<label>Search</label>
 				<input class="w3-input search-type" type="text">
 			</div>
-			<!-- <div class="col-lg-2 col-xs-8 leit-icon">
-  				<img src="img/LEIT.png">
-  			</div> -->
-  		</div>
-  		<h1>Rating</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="filter-heading">
+					<h1>Rating</h1>
+				</div>
+				<div id="rating-slider" class="noUi-target noUi-ltr noUi-horizontal">
+				</div>
+				<div class="row">
+					<div class="filter-heading">
+						<h1>Year</h1>
+					</div>
+				</div>
+				<div id="year-slider" class="noUi-target noUi-ltr noUi-horizontal">
+				</div>
+				<div class="row">
+					<div class="filter-heading">
+						<h1>Genre</h1>
+					</div>
+				</div>
+			</div>
 
-  		<div id="rating-slider" class="noUi-target noUi-ltr noUi-horizontal">
-  			<!-- <div class="noUi-base"> -->
-  				<!-- <div class="noUi-origin" style="left: 20%;">
-  					<div class="noUi-handle noUi-handle-lower" data-handle="0" style="z-index: 5;">
-  					</div>
-  				</div>
-  				<div class="noUi-connect" style="left: 20%; right: 20%;">
-  				</div>
-  				<div class="noUi-origin" style="left: 80%;">
-  					<div class="noUi-handle noUi-handle-upper" data-handle="1" style="z-index: 4;">
-  					</div> -->
-  		</div>
-
-  		<h1>Year</h1>
-
-  		<div id="year-slider" class="noUi-target noUi-ltr noUi-horizontal">
-  			<!-- <div class="noUi-base"> -->
-  				<!-- <div class="noUi-origin" style="left: 20%;">
-  					<div class="noUi-handle noUi-handle-lower" data-handle="0" style="z-index: 5;">
-  					</div>
-  				</div>
-  				<div class="noUi-connect" style="left: 20%; right: 20%;">
-  				</div>
-  				<div class="noUi-origin" style="left: 80%;">
-  					<div class="noUi-handle noUi-handle-upper" data-handle="1" style="z-index: 4;">
-  					</div> -->
-  		</div>
-
-  		<h1>Genre</h1>
-  		
-  		<div>
-  			<button class="see-more">Search</button>
-  		</div>
+			<div>
+				<button class="see-more">Search</button>
+			</div>
 
 
-  	<div id="footer"></div>
+			<div id="footer"></div>
 
-  	<script type="text/javascript" src="js/jquery.js"></script>
-  	<script type="text/javascript" src="vendor/slick/slick/slick.min.js"></script>
-  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="js/nouislider.min.js"></script>
-  	<script type="text/javascript" src="js/search.js"></script>
-  </body>
-  </html>
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="vendor/slick/slick/slick.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="js/nouislider.min.js"></script>
+			<script type="text/javascript" src="js/search.js"></script>
+		</body>
+		</html>
+		=======
+	</div> -->
+</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 search-filter-title">
+			<h3>Rating</h3>
+		</div>
+	</div>
+	<div class="center-range-slide">
+		<div class="row">
+			<div class="col-lg-1 range-search-slide-value">
+				<div id="slider-value-0">0</div>
+				<div id="slider-value">x</div>
+				<div id="slider-value-10">10</div>
+			</div>
+		</div>
+	</div>
+	<div class="center-range-slide">
+		<div id="slider"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 search-filter-title">
+			<h3>Year</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 search-filter-title">
+			<h3>Genre</h3>
+		</div>
+	</div>
+	<div class="row genre-button-line">
+		<div class="col-lg-4 genre-button">
+			<button class="">Action</button>
+		</div>
+		<div class="col-lg-4 genre-button">
+			<button class="">Action</button>
+		</div>
+		<div class="col-lg-4 genre-button">
+			<button class="">Action</button>
+		</div>
+	</div>
+	<div class="row genre-button-line">
+		<div class="col-lg-4 genre-button">
+			<button class="">Action</button>
+		</div>
+		<div class="col-lg-4 genre-button">
+			<button class="">Action</button>
+		</div>
+		<div class="col-lg-4 genre-button">
+			<button class="">Action</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-11 show-more-button">
+			<button class="show-more">Show more</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 submit-search-button">
+			<button class="submit-search">Search</button>
+		</div>
+	</div>
+</div>
+
+<div id="footer"></div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="vendor/slick/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/nouislider.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+>>>>>>> ea861df80c6093fe9ca785f92cb7f93b0bda4bf4

@@ -20,6 +20,8 @@ const createSlider = (sliderElement, minRange, maxRange, step) => {
 			'max': maxRange
 		},
 		step: step,
+		start: [1950, 2000],
+		direction: 'ltr',
 		pips: { // Show a scale with the slider
 			mode: 'positions',
 			values: [0, 100],
@@ -33,3 +35,10 @@ createSlider(yearSlider, 1888, 2017, 1);
 
 
 //ratingSlider.noUiSlider.get();
+
+//genre-buttons
+
+$('button').on('click', function(){
+    $('button').removeClass('selected');
+    $(this).addClass('selected');
+});
